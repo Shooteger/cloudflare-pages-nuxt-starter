@@ -1,26 +1,29 @@
 {
-	"name": "cloudflare-pages-nuxt-starter",
-	"type": "module",
-	"private": true,
-	"scripts": {
-		"build": "nuxt build",
-		"dev": "nuxt dev",
-		"generate": "nuxt generate",
-		"preview": "yarn run build && wrangler pages dev",
-		"postinstall": "nuxt prepare",
-		"deploy": "yarn run build && wrangler pages deploy",
-		"cf-typegen": "wrangler types"
-	},
-	"dependencies": {
-		"@nuxt/image": "1.11.0",
-		"@nuxt/ui": "^4.0.1",
-		"nuxt": "^4.1.3",
-		"nuxt-security": "2.4.0",
-		"vue": "^3.5.22",
-		"vue-router": "^4.5.1"
-	},
-	"devDependencies": {
-		"nitro-cloudflare-dev": "^0.2.2",
-		"wrangler": "^4.42.2"
-	}
+  "name": "cloudflare-pages-nuxt-starter",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "yarn run build && wrangler pages dev",
+    "postinstall": "nuxt prepare",
+    "deploy": "yarn run build && wrangler pages deploy",
+    "cf-typegen": "wrangler types"
+  },
+  "dependencies": {
+    "@nuxt/image": "2.0.0",
+    "@nuxt/ui": "^4.2.1",
+    "nuxt": "4.2.2",
+    "nuxt-security": "2.5.0",
+    "vue": "^3.5.25",
+    "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.1",
+    "nitro-cloudflare-dev": "^0.2.2",
+    "wrangler": "^4.54.0",
+    "typescript": "^5.9.3",
+    "vue-tsc": "^3.1.8"
+  }
 }

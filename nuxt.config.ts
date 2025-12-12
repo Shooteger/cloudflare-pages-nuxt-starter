@@ -1,9 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2025-07-15',
+  compatibilityDate: '2025-12-12',
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
-  
+
   nitro: {
     preset: 'cloudflare-pages',
 
@@ -15,9 +15,9 @@ export default defineNuxtConfig({
 
   modules: [
     'nuxt-security',
-    'nitro-cloudflare-dev',
     '@nuxt/ui',
     '@nuxt/image',
+    'nitro-cloudflare-dev',
   ],
 
   image: {
